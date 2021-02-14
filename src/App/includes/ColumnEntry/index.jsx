@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function ColumnEntry(props) {
     return (
-        <div className="col-sm-6 col-md-2 my-3">
-            <div className="novel border shadow" style={{borderRadius: "8px"}}>
-                <div className="novel_thumb border">
+        <div className="col-sm-2 col-md-2 my-3">
+            <div className="novel shadow" style={{borderRadius: "8px"}}>
+                <div className="novel_thumb border" style={{height: `${props.width < 300 && '220px'}`}}>
                     <Link to={`/novel/${props.slug}`}>
                         <img src={props.image} alt="poster-novel" />
                     </Link>

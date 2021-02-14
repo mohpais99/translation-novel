@@ -9,12 +9,14 @@ function NovelEntry(props) {
         <Swiper
             className="pb-4"
             spaceBetween={20}
-            slidesPerView={6}
+            slidesPerView={
+                props.width > 301 ? 6 : 2
+            }
             scrollbar={{ draggable: true }}>
                 {
                     props.novel.map((data, i) => 
                         <SwiperSlide key={i} className="novel">
-                            <div className="novel_thumb border">
+                            <div className="novel_thumb border" style={{height: `${props.width > 301 ? '270px' : '190px'}`}}>
                                 <Link to="">
                                     <img src={data.image} alt="poster-novel" />
                                 </Link>

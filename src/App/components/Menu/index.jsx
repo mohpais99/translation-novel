@@ -37,19 +37,19 @@ function Header() {
                                     <img src={logo} alt="my-logo"/>
                                 </Link>
                             </div>
-                            <div className="col-auto my-auto menu active">
+                            <div className="col-auto my-auto menu d-none d-md-block active">
                                 <Link to="/">
                                     <FontAwesomeIcon className="mr-2" icon={["fa", "home"]} />
                                     Home
                                 </Link>
                             </div>
-                            <div className="col-auto my-auto menu">
+                            <div className="col-auto my-auto menu d-none d-md-block ">
                                 <Link to="/daftar-novel">
                                     <FontAwesomeIcon className="mr-2" icon={["fa", "clipboard-list"]} />
                                     Daftar Novel
                                 </Link>
                             </div>
-                            <div className="col-auto my-auto menu">
+                            <div className="col-auto my-auto menu d-none d-md-block ">
                                 <Link to="/daftar-novel">
                                     <FontAwesomeIcon className="mr-2" icon={["fa", "fire-alt"]} />
                                     Hot Novel
@@ -67,7 +67,7 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <div ref={element} className={`container-fluid ${isSticky && 'sticky'}`}>
+            <div ref={element} className={`container-fluid d-none d-md-block ${isSticky && 'sticky'}`}>
                 <div className="row bg-light">
                     <div className="col-12">
                         <Swiper

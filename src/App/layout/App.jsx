@@ -7,8 +7,24 @@ import routes from '../Routes';
 class App extends Component {
     constructor(props) {
         super(props)
-        this.state = {}
+        this.state = {
+            width: null
+        }
+        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
     }
+    componentDidMount() {
+        this.updateWindowDimensions();
+        window.addEventListener("resize", this.updateWindowDimensions.bind(this));
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updateWindowDimensions.bind(this));
+    }
+
+    updateWindowDimensions() {
+        this.setState({ width: window.innerWidth});
+    }
+
     getRoutes = (routes) => {
         return routes.map((prop, key) => {
             return (
@@ -16,7 +32,7 @@ class App extends Component {
                     key={key}
                     path={prop.path}
                     render={props => 
-                        <prop.component {...props} />
+                        <prop.component {...this.state} {...props} />
                     }
                     exact />
             );
@@ -24,12 +40,7 @@ class App extends Component {
     }
     render() {
         return (
-            <>  
-                {/* {
-                    this.props.sidebar.status && (
-                        <Sidebar />
-                    )
-                } */}
+            <>
                 <Sidebar status={this.props.sidebar.status} />
                 <div className="wrapper">
                     <Menu />

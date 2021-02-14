@@ -3,7 +3,7 @@ import { Banner } from 'App/components';
 import { NovelEntry } from 'App/includes';
 import './style.css';
 
-function Home() {
+function Home(props) {
     const listnovel = require('../../list-novel').default
     return (
         <>
@@ -17,7 +17,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="col-12">
-                            <NovelEntry novel={listnovel} />
+                            <NovelEntry {...props} novel={listnovel} />
                         </div>
                     </div>
                     <div className="row">
@@ -27,7 +27,7 @@ function Home() {
                             </div>
                         </div>
                         <div className="col-12">
-                            <NovelEntry novel={listnovel} />
+                            <NovelEntry {...props} novel={listnovel} />
                         </div>
                     </div>
                 </div>
