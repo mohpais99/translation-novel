@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function ColumnEntry(props) {
     return (
-        <div className="col-sm-6 col-md-2 my-2">
-            <div className="novel border">
+        <div className="col-sm-6 col-md-2 my-3">
+            <div className="novel border shadow" style={{borderRadius: "8px"}}>
                 <div className="novel_thumb border">
-                    <Link to="">
+                    <Link to={`/novel/${props.slug}`}>
                         <img src={props.image} alt="poster-novel" />
                     </Link>
                     <div className="hot_box">
@@ -16,7 +16,7 @@ function ColumnEntry(props) {
                 </div>
                 <div className="novel_content text-center">
                     <h6 className="mb-0">
-                        <Link to="/">
+                        <Link to={`/novel/${props.slug}`}>
                             {
                                 props.title.length > 25 ?
                                     props.title.substring(0, 25) + '...'

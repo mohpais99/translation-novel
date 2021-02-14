@@ -10,7 +10,7 @@ function List() {
         <div className="container-fluid mt-3">
             <div className="row">
                 <div className="col-12 mb-2">
-                    <div className="row info py-1 mx-2 my-auto border-bottom">
+                    <div className="row info py-2 mx-2 my-auto border-bottom">
                         <div className="col pl-0">
                             <div className="grid">
                                 <div onClick={() => setGrid('column')}  className={`column ${grid === 'column' && 'active'}`}>

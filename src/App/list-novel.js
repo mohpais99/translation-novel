@@ -11,6 +11,7 @@ import tate from 'Assets/Images/poster/tate.jpg';
 const listNovel = [
     {
         title: "Kage no Jitsuryokusha Ni Naritakute",
+        slug: "kage-no-jitsuryokusha-ni-aritakute",
         image: kage,
         genre: [
             "Isekai",
@@ -25,6 +26,7 @@ const listNovel = [
     },
     {
         title: "Tensei Shitara Slime Detta-ken",
+        slug: "tensei-shitara-slime-detta-ken",
         image: slime,
         genre: [
             "Isekai",
@@ -37,6 +39,7 @@ const listNovel = [
     },
     {
         title: "Stranger's Handsbook",
+        slug: "stranger-handsbook",
         image: strangers,
         genre: [
             "Isekai",
@@ -49,6 +52,7 @@ const listNovel = [
     },
     {
         title: "Overlord",
+        slug: "overlord",
         image: overlord,
         genre: [
             "Isekai",
@@ -60,6 +64,7 @@ const listNovel = [
     },
     {
         title: "Hataraku Maou-sama",
+        slug: "hataraku-maou-sama",
         image: maou,
         genre: [
             "Isekai",
@@ -72,6 +77,7 @@ const listNovel = [
     },
     {
         title: "Watashi, Nouryoku wa Heikinchi de tte Itta yo ne!",
+        slug: "watashi-nouryoku-wa-heikinchi-de-tte-itta-yo-ne",
         image: nouryoku,
         genre: [
             "Isekai",
@@ -84,6 +90,7 @@ const listNovel = [
     },
     {
         title: "Log Horizon",
+        slug: "log-horizon",
         image: horizon,
         genre: [
             "Isekai",
@@ -96,6 +103,7 @@ const listNovel = [
     },
     {
         title: "Death March Kara Hajimaru",
+        slug: "death-march-kara-hajimaru",
         image: deathmarch,
         genre: [
             "Isekai",
@@ -108,6 +116,7 @@ const listNovel = [
     },
     {
         title: "Tate no Yuusha no Nariagi",
+        slug: "tate-no-yuusha-no-nariagi",
         image: tate,
         genre: [
             "Isekai",

@@ -5,10 +5,10 @@ import './style.css';
 
 function RowsEntry(props) {
     return (
-        <div className="col-sm-6 col-md-4 my-2 grid">
+        <div className="col-sm-6 col-md-4 my-3 grid">
             <div className="row">
                 <div className="col-6">
-                    <img src={props.image} alt="image"/>
+                    <img style={{borderRadius: "8px"}} src={props.image} alt="image"/>
                 </div>
                 <div className="col-6 shadow py-1" style={{borderRadius: "8px"}}>
                     <Link className="h6 title font-rhd-bold mb-0" to="/">{props.title}</Link>
