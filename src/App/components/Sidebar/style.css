@@ -1,0 +1,112 @@
+.sidebar--overlay {
+    display: flex;
+    position: fixed;
+    z-index: 197;
+    inset: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(20, 20, 23, 0.5);
+    visibility: hidden;
+}
+
+.sidebar--overlay.active {
+    transition: all 300ms ease-in 0s;
+    -webkit-transition: all 0.25s;
+    visibility: visible;
+}
+
+.sidenav {
+    z-index: 150;
+    position: absolute;
+    width: 100%;
+    max-width: 312px;
+    height: 100%;
+    background: rgb(242, 242, 247) none repeat scroll 0% 0% padding-box content-box;
+    right: 0;
+
+}
+
+.sidenav .sideheader {
+    height: 190px;
+    color: #fff;
+    background: #007bff none repeat scroll 0% 0%;
+    padding: 48px 20px 15px;
+    position: relative;
+}
+
+.sidenav .close {
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    color: red;
+}
+
+.sidenav .sideheader .side-btn {
+    margin-top: 8px;
+    margin-bottom: 14px;
+    font-size: 0.857rem;
+    line-height: 1.143rem;
+    font-weight: 500;
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    height: 40px;
+}
+
+.sidenav .sideheader .side-btn.side-outline {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 0px .75rem;
+    border-radius: 8px;
+    outline: currentcolor none 0px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    background: transparent none repeat scroll 0% 0%;
+    color: #fff;
+}
+
+.sidenav .sideheader .side-btn.side-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+
+.sidenav .sidemenu {
+    background: #fff;
+    display: flex;
+    cursor: pointer;
+}
+
+.sidenav .sidemenu .icon {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    color: #a3a3a3;
+    font-size: 15px;
+    line-height: 38px;
+    text-align: center;
+    color: #333;
+}
+
+.sidenav .sidemenu .menu {
+    color: #a3a3a3;
+    padding: 0 0 0 .5em;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 38px;
+    text-align: center;
+    color: #333;
+}
+
+.sidenav .sidemenu .menu span {
+    text-transform: uppercase;
+}

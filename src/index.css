@@ -1,0 +1,52 @@
+body {
+    font-family: RedHadDisplay;
+    background: url('Assets/Images/pattern-1.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.shadow-white {
+    box-shadow: 0 8px 16px 0 rgba(255,255,255,0.5) !important;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.home.banner_area {
+    background: url('Assets/Images/bg-1.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.list-novel {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 40vh;
+}
+
+.list-novel.banner_area {
+    background: url('Assets/Images/bg-1.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.backdrop {
+    z-index: 1;
+    min-height: 100% !important;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    width: 100%;
+}

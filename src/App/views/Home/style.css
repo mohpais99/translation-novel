@@ -1,0 +1,12 @@
+.content_list {
+    position: relative;
+}
+
+.section_title {
+    display: flex;
+    margin: 30px 0px 10px!important;
+}
+
+.section_title h5 {
+    font-weight: 600;
+}

@@ -1,0 +1,62 @@
+.novel-terbaru {
+    border-radius: .65rem !important;
+}
+
+.novel-terbaru img {
+    height: 250px !important;
+}
+
+.novel-terbaru a.title {
+    color: #333;
+    font-size: 14px !important;
+}
+
+.novel-terbaru a.title:hover {
+    color: #3366ff;
+}
+
+.novel-terbaru .rating {
+    color: #e6d2a9;
+}
+
+.novel-terbaru .rating .on {
+    color: burlywood;
+}
+
+.novel-terbaru .description {
+    font-size: 10px;
+}
+
+.novel-terbaru ul {
+    list-style: none;
+}
+
+
+.novel-terbaru ul li {
+    margin-right: 15px;
+}
+
+.novel-terbaru li.wishlist a{
+    border: 2px solid burlywood;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: burlywood;
+}
+
+.novel-terbaru li.wishlist a:hover {
+    background-color: burlywood;
+    color: #fff;
+}
+
+.novel-terbaru .action {
+    position: absolute;
+    bottom: 1.5em;
+    padding: 0;
+    margin: 0;
+}

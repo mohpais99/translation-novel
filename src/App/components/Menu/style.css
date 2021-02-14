@@ -1,0 +1,53 @@
+.menu--header {
+    position: relative;
+}
+
+.menu--header .logo {
+    max-width: 120px;
+}
+
+.menu--header .logo img {
+    width: 100% !important;
+}
+
+.menu--header .sticky {
+    position: fixed;
+    top: 0;
+    height: 0;
+    z-index: 10;
+    /* animation: smoothScroll 1s forwards; */
+}
+
+.menu--header .menu a {
+    font-weight: 600;
+    height: 100%;
+    cursor: pointer;
+    color: #fff;
+}
+
+.menu--header .menu:hover a, .menu--header .menu.active a{
+    color: #f2f2f2;
+}
+
+.menu--header .search {
+    color: #fff;
+}
+.menu--header .menu-right button {
+    position: relative;
+    margin: 0px;
+    border: 0px none;
+    background: transparent none repeat scroll 0% 0%;
+    color: #fff;
+    outline: currentcolor none 0px;
+    cursor: pointer;
+    pointer-events: all;
+}
+
+@keyframes smoothScroll {
+	0% {
+		transform: translateY(-40px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}

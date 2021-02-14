@@ -1,0 +1,59 @@
+/* .grid .poster{
+    width: 220px;
+    height: 300px;
+} */
+
+.grid img {
+    width: 100%;
+    height: 100%;
+}
+
+.grid a.title {
+    color: #333;
+}
+
+.grid a.title:hover {
+    color: #3366ff;
+}
+
+.grid .rating {
+    color: #e6d2a9;
+}
+
+.grid .rating .on {
+    color: burlywood;
+}
+
+.grid ul {
+    list-style: none;
+}
+
+
+.grid ul li {
+    margin-right: 15px;
+}
+
+.grid li.wishlist a{
+    border: 2px solid burlywood;
+    border-radius: 100%;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: burlywood;
+}
+
+.grid li.wishlist a:hover {
+    background-color: burlywood;
+    color: #fff;
+}
+
+.grid .action {
+    position: absolute;
+    bottom: 1.5em;
+    padding: 0;
+    margin: 0;
+}
