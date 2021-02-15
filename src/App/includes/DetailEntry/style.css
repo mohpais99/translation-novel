@@ -1,0 +1,8 @@
+.chapter-list {
+    height: 410px;
+}
+.chapter-list ul{
+    height: 100%;
+    list-style: none;
+    overflow-y: scroll;
+}

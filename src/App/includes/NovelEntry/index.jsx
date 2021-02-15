@@ -10,13 +10,13 @@ function NovelEntry(props) {
             className="pb-4"
             spaceBetween={20}
             slidesPerView={
-                props.width > 301 ? 6 : 2
+                props.width > 488 ? 6 : 2
             }
             scrollbar={{ draggable: true }}>
                 {
                     props.novel.map((data, i) => 
                         <SwiperSlide key={i} className="novel">
-                            <div className="novel_thumb border" style={{height: `${props.width > 301 ? '270px' : '190px'}`}}>
+                            <div className="novel_thumb border" style={{height: `${props.width > 488 ? '270px' : '200px'}`}}>
                                 <Link to="">
                                     <img src={data.image} alt="poster-novel" />
                                 </Link>
@@ -26,7 +26,7 @@ function NovelEntry(props) {
                             </div>
                             <div className="novel_content text-center">
                                 <h6 className="mb-0">
-                                    <Link to="/">
+                                    <Link style={{fontSize: `${props.width < 488 ? '10px': '14px'}`}} to="/">
                                         {
                                             data.title.length > 25 ?
                                                 data.title.substring(0, 25) + '...'

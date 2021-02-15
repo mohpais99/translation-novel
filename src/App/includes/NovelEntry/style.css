@@ -4,7 +4,7 @@
 }
 
 .novel .novel_thumb {
-    /* height: 270px; */
+    height: 270px;
     position: relative;
 }
 
@@ -42,10 +42,10 @@
     transition: all 0.4s ease 0s;
 }
 
-.novel .novel_content .rating {
+.rating {
     color: #e6d2a9;
 }
 
-.novel .novel_content .rating .on {
+.rating .on {
     color: burlywood;
 }

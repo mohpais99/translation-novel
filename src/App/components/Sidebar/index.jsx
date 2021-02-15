@@ -1,14 +1,20 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import './style.css';
 
 function Sidebar(props) {
+    const history = useHistory()
     const dispatch = useDispatch()
 
     const handleSidebar = () => {
         dispatch({type: "SIDEBAR_SHOW", payload: false})
+    }
+
+    const handleHistory = (link) => {
+        handleSidebar()
+        history.push(link)
     }
     return (
         <div className={`sidebar--overlay ${props.status && 'active'}`}>
@@ -34,9 +40,17 @@ function Sidebar(props) {
                         <span className="text-success ml-1">FREE</span>
                     </div>
                 </div>
-                <div className="w-100 sidemenu border-bottom px-2">
+                <div onClick={() => handleHistory('/')} className="w-100 sidemenu border-bottom px-2">
                     <div className="icon">
-                        <FontAwesomeIcon className="mr-2" icon={["fa", "clipboard-list"]} />
+                        <FontAwesomeIcon icon={["fa", "home"]} />
+                    </div>
+                    <div className="menu my-auto">
+                        <span>Beranda</span>
+                    </div>
+                </div>
+                <div onClick={() => handleHistory('/daftar-novel')} className="w-100 sidemenu border-bottom px-2">
+                    <div className="icon">
+                        <FontAwesomeIcon icon={["fa", "clipboard-list"]} />
                     </div>
                     <div className="menu my-auto">
                         <span>Daftar Novel</span>

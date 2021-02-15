@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function ColumnEntry(props) {
     return (
-        <div className="col-sm-2 col-md-2 my-3">
+        <div className="col-6 col-md-2 my-3">
             <div className="novel shadow" style={{borderRadius: "8px"}}>
-                <div className="novel_thumb border" style={{height: `${props.width < 300 && '220px'}`}}>
+                <div className="novel_thumb border" style={{height: `${props.width < 488 ? '200px': '270px'}`}}>
                     <Link to={`/novel/${props.slug}`}>
                         <img src={props.image} alt="poster-novel" />
                     </Link>
@@ -16,7 +16,7 @@ function ColumnEntry(props) {
                 </div>
                 <div className="novel_content text-center">
                     <h6 className="mb-0">
-                        <Link to={`/novel/${props.slug}`}>
+                        <Link style={{fontSize: `${props.width < 488 ? '10px': '14px'}`}} to={`/novel/${props.slug}`}>
                             {
                                 props.title.length > 25 ?
                                     props.title.substring(0, 25) + '...'
@@ -25,7 +25,7 @@ function ColumnEntry(props) {
                             }
                         </Link>
                     </h6>
-                    <div className="rating">
+                    <div className="rating mb-2">
                         <FontAwesomeIcon className="on" icon={["fa", "star"]} />
                         <FontAwesomeIcon className="on" icon={["fa", "star"]} />
                         <FontAwesomeIcon className="on" icon={["fa", "star"]} />
