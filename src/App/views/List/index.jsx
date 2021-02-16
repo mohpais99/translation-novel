@@ -8,6 +8,15 @@ function List(props) {
     const listnovel = require('../../list-novel').default
     return (
         <div className="container-fluid mt-3">
+            <div className="row px-4 mb-2">
+                <div className="col-12 py-2 bg-primary text-white">
+                    <span className="mr-2">Home</span>
+                    <span className="mr-2">&gt;</span>
+                    <span>
+                        <b>Daftar Novel</b>
+                    </span>
+                </div>
+            </div>
             <div className="row">
                 <div className="col-12 mb-2">
                     <div className="row info py-2 mx-2 my-auto border-bottom">

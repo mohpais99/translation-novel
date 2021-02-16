@@ -16,9 +16,9 @@ function NovelEntry(props) {
                 {
                     props.novel.map((data, i) => 
                         <SwiperSlide key={i} className="novel">
-                            <div className="novel_thumb border" style={{height: `${props.width > 488 ? '270px' : '200px'}`}}>
+                            <div className="novel_thumb border" style={{height: `${props.width > 488 ? '320px' : '200px'}`}}>
                                 <Link to="">
-                                    <img src={data.image} alt="poster-novel" />
+                                    <img src={data.image} alt="poster-novel"/>
                                 </Link>
                                 <div className="hot_box">
                                     <span className="hot-label">BEST SALLER</span>

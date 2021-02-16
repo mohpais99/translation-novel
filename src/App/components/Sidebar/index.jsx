@@ -40,7 +40,7 @@ function Sidebar(props) {
                         <span className="text-success ml-1">FREE</span>
                     </div>
                 </div>
-                <div onClick={() => handleHistory('/')} className="w-100 sidemenu border-bottom px-2">
+                <div onClick={() => handleHistory('/')} className="w-100 d-sm-block d-lg-none sidemenu border-bottom px-2">
                     <div className="icon">
                         <FontAwesomeIcon icon={["fa", "home"]} />
                     </div>
@@ -48,7 +48,7 @@ function Sidebar(props) {
                         <span>Beranda</span>
                     </div>
                 </div>
-                <div onClick={() => handleHistory('/daftar-novel')} className="w-100 sidemenu border-bottom px-2">
+                <div onClick={() => handleHistory('/daftar-novel')} className="w-100 d-sm-block d-lg-none sidemenu border-bottom px-2">
                     <div className="icon">
                         <FontAwesomeIcon icon={["fa", "clipboard-list"]} />
                     </div>
@@ -56,7 +56,7 @@ function Sidebar(props) {
                         <span>Daftar Novel</span>
                     </div>
                 </div>
-                <div className="w-100 sidemenu border-bottom px-2">
+                <div className="w-100 d-sm-block d-lg-none sidemenu border-bottom px-2">
                     <div className="icon">
                         <FontAwesomeIcon icon={["fa", "fire-alt"]} />
                     </div>
@@ -64,7 +64,7 @@ function Sidebar(props) {
                         <span>Hot Novel</span>
                     </div>
                 </div>
-                <div className="w-100 sidemenu border-bottom px-2">
+                <div className="w-100 d-sm-block d-lg-none sidemenu border-bottom px-2">
                     <div className="icon">
                         <FontAwesomeIcon icon={["fa", "plus-square"]} />
                     </div>
